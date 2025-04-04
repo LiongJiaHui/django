@@ -21,7 +21,6 @@ jobs:
         source venv/bin/activate
         pip install -r docs/requirements.txt
         pip install -e .
-        pip install -r requirements/py3.txt
 
     - name: Run tests
       run: |
