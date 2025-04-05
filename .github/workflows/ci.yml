@@ -22,7 +22,12 @@ jobs:
         pip install -r docs/requirements.txt
         pip install -e .
 
-    - name: Run tests
+    - name: Run Unit tests (Django)
       run: |
         source venv/bin/activate
-        python tests/runtests.py
+        python tests/runtests.py 
+
+    - name: Run WSGI tests
+      run: |
+        source venv/bin/activate
+        python tests/wsgi/tests.py
