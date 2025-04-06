@@ -1,0 +1,5 @@
+# This file is used to deploy this Django website using Docker.
+Django>=4.0
+asgiref>=3.3.0
+gunicorn
+psycopg2-binary
